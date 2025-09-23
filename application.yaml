@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1  
 kind: Application
 metadata:
-  name: helm-flask-restapi-prod
+  name: flask-restapi
   namespace: argocd
 spec:
   project: default
@@ -15,7 +15,7 @@ spec:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: prod 
+    namespace: flaskpg-demo 
 
   syncPolicy:
     syncOptions:
