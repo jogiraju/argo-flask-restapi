@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/jogiraju/argo-flask-restapi.git
     targetRevision: HEAD
-    path: /
+    path: .
     helm:
       valueFiles:
         - values.yaml
